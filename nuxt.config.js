@@ -16,7 +16,7 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['~/assets/css/main.css','~/assets/css/normalize.css','~/assets/css/font-awesome.css'],
+  css: ['~/assets/css/main.css','~/assets/css/font-awesome.css'],
   /*
   ** Add axios globally
   */
@@ -25,15 +25,15 @@ module.exports = {
     /*
     ** Run ESLINT on save
     */
-    // extend (config, ctx) {
-    //   if (ctx.isClient) {
-    //     config.module.rules.push({
-    //       enforce: 'pre',
-    //       test: /\.(js|vue)$/,
-    //       loader: 'eslint-loader',
-    //       exclude: /(node_modules)/
-    //     })
-    //   }
-    // }
+    /*extend (config, ctx) {
+      if (ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
+    }*/
   }
 }
