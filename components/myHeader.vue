@@ -132,7 +132,7 @@
             return {
                 userShow:false,
                 notifyShow:false,
-                bgShow:false,
+                bgShow:false
             }
         },
         name: "myHeader"
@@ -269,7 +269,6 @@
     nav .nav-list>li.active{
         color: #ea6f5a;
         background-color: #fff;
-        color: #fff !important;
     }
     nav .nav-list .notify{
         position: relative;
@@ -282,6 +281,7 @@
         border: 1px solid #ccc;
         box-shadow: 0 0 8px rgba(0,0,0,.1);
         font-size: 14px;
+        background-color: #fff;
     }
     nav .notify .drop-menu ul {
         padding: 10px 0;
@@ -324,8 +324,26 @@
     nav .nav-list .search {
         padding-left: 15px;
     }
-    nav .nav-list .search:hover{
-        background: #fff;
+    nav .nav-list .search:hover {
+        background-color: #fff;
+    }
+    nav .nav-list .search a.search-btn{
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        text-align: center;
+    }
+    nav .nav-list .search form a.active{
+        background-color: #969696;
+        border-radius: 50%;
+        color: #fff!important;
+    }
+    nav .nav-list .search a.search-btn i {
+        width: 30px;
+        height: 30px;
     }
     nav .nav-list .search form input{
         width: 240px;
@@ -338,31 +356,11 @@
         transition: width .3s ease-in;
     }
     nav .nav-list .search form input:focus{
-             width: 320px;
-         }
+        width: 320px;
+    }
     nav .nav-list .search form{
         margin-top: 9px;
         position: relative;
-    }
-    nav .nav-list .search form a.search-btn{
-        display: block;
-        position: absolute;
-        width: 30px;
-        height: 30px;;
-        line-height: 30px;
-        right: 5px;
-        top: 4px;
-        text-align: center;
-    }
-    nav .nav-list .search form a.active{
-        background: #969696;
-        border-radius: 50%;
-        color: #fff !important;
-    }
-    nav .nav-list .search form a.search-btn i {
-        font-size: 18px;
-        width: 30px;
-        height: 30px;
     }
     @media (max-width: 1440px){
         nav .nav-list>li>a i{
@@ -389,10 +387,9 @@
             width: 150px;
         }
     }
-    @media(max-width: 768px){
+    @media (max-width: 768px){
         nav .nav-list{
             display: none;
         }
     }
-
 </style>

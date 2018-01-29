@@ -1,4 +1,8 @@
 module.exports = {
+  //插件
+  plugins:[
+      {src:'~/plugins/swiper-plugins.js',ssr:false}
+  ],
   /*
   ** Headers of the page
   */
@@ -16,7 +20,7 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['~/assets/css/main.css','~/assets/css/font-awesome.css'],
+  css: ['~/assets/css/main.css','~/assets/css/normalize.css','~/assets/css/font-awesome.css','swiper/dist/css/swiper.css'],
   /*
   ** Add axios globally
   */
@@ -25,7 +29,8 @@ module.exports = {
     /*
     ** Run ESLINT on save
     */
-    /*extend (config, ctx) {
+    /*
+    extend (config, ctx) {
       if (ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -34,6 +39,7 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }*/
+    }
+    */
   }
 }

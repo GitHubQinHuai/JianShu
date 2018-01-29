@@ -1,6 +1,6 @@
 # jianshu
 
-> jianshu product
+> Nuxt.js project
 
 ## Build Setup
 
